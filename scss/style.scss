@@ -1,0 +1,95 @@
+header {
+    background-color: #CFD3EB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1920px;
+    height: 78px;
+    font-family: 'RobotoMedium';
+
+    @font-face {
+        font-family: 'RobotoRegular';
+        src: url('../fonts/Roboto/Roboto_Condensed-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'RobotoSemiBold';
+        src: url('../fonts/Roboto/Roboto_Condensed-SemiBold.ttf');
+    }
+
+    @font-face {
+        font-family: 'RobotoMedium';
+        src: url('../fonts/Roboto/static/Roboto-Medium.ttf');
+    }
+
+    @font-face {
+        font-family: 'JostRegular';
+        src: url('../fonts/Jost/Jost-Regular.ttf');
+    }
+
+        @font-face {
+        font-family: 'JostSemiBold';
+        src: url('../fonts/Jost/Jost-SemiBold.ttf');
+    }
+}
+
+a {
+    color: #64677E;
+    font-size: 20px;
+}
+
+header :first-child {
+    width: 106px;
+    height: 46px;
+    margin-left: 320px;
+}
+
+header :last-child {
+    width: 32px;
+    height: 32px;
+    margin-right: 320px;
+}
+
+main {
+    background-color: #4351bb;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tasks-section {
+    background: white;
+    width: 600px;
+    height: 518px;
+    border-radius: 20px;
+    filter: drop-shadow(26px 25px 75px #E6E7F6)
+}
+
+.tasks-section :first-child {}
+
+.tasks-section>a {
+    border: black;
+    border-radius: 10px;
+
+}
+
+.add-btn {
+    background: #636AA3;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.tasks-list {
+    margin-bottom: 30px;
+    font-family: 'RobotoRegular';
+
+}
