@@ -1,0 +1,66 @@
+@import url(../css/base.css);
+
+.main {
+    background-color: #CFD3EB;
+}
+
+.containerwelcome {
+    margin-top: 11.4rem;
+    margin-left: 27rem;
+}
+
+.logotip {
+    width: 34.6rem;
+    height: 15.2rem;
+    margin-bottom: 5.3rem;
+}
+
+.main-text h1 {
+    color: #3C3E4C;
+    font-family: "RobotoBold";
+    font-size: 6.4rem;
+    margin-bottom: 2.5rem;
+    max-width: 53rem;
+}
+
+.main-text>p {
+    color: #3C3E4C;
+    font-family: "RobotoRegular";
+    font-size: 3.6rem;
+    max-width: 90.6rem;
+}
+
+button {
+    font-size: 2.6rem;
+    color: #3C3E4C;
+    font-family: "RobotoRegular";
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1.1rem 4rem;
+    cursor: pointer;
+}
+
+.register {
+    font-size: 2.6rem;
+    color: #FFF;
+    font-family: "RobotoRegular";
+    background-color: #636AA3;
+    border-radius: 1rem;
+    padding: 1.1rem 5.8rem;
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    gap: 6.5rem;
+    margin-top: 6.5rem;
+}
+
+.more-information {
+    font-family: "RobotoRegular";
+    color: #3C3E4C;
+    font-size: 2.4rem;
+    text-decoration: underline;
+    margin-top: 5.5rem;
+
+}

@@ -1,0 +1,91 @@
+@import url(../css/base.css);
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title>img {
+    width: 5.3rem;
+    height: 5.3rem;
+    position: absolute;
+    inset-block-start: 14.8rem;
+    inset-inline-start: 28.8rem;
+}
+
+.title>p {
+    font-size: 3.6rem;
+    font-family: 'JostSemiBold';
+    color: #3C3E4C;
+}
+
+
+.notes-input {
+    background-color: #FFF;
+    box-shadow: 15px 25px 50px #E6E7F6;
+    border-radius: 2rem;
+    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+    width: 127.1rem;
+    height: 7rem;
+    margin-bottom: 7.6rem;
+}
+
+.notes-input>input {
+    font-family: "RobotoMedium";
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 2.8rem;
+
+}
+
+.notes {
+    display: flex;
+    margin-bottom: 4.55rem;
+}
+
+.notes-user>p {
+    font-family: "RobotoMedium";
+    font-size: 2rem;
+    color: #3C3E4C;
+    margin-bottom: 3.5rem;
+}
+
+.one-notes {
+    background-color: #FFF;
+    box-shadow: 15px 15px 50px #E6E7F6;
+    width: 27.1rem;
+    height: 11.7rem;
+    border-radius: 1rem;
+    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 6.2rem;
+}
+
+.one-notes>p {
+    font-size: 1.6rem;
+    color: #3C3E4C;
+    font-family: "RobotoMedium";
+
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    gap: 4.8rem;
+}
+
+.name>p {
+    font-family: "RobotoMedium";
+    font-size: 2rem;
+    color: #3C3E4C;
+}
+
+.name>img {
+    width: 2.4rem;
+    height: 2.4rem;
+}

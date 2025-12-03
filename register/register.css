@@ -1,0 +1,32 @@
+@import url(../css/base.css);
+
+.container-register {
+    margin-top: 26rem;
+    margin-left: 59.4rem;
+}
+
+.register>h1 {
+    font-family: "RobotoSemiBold";
+    font-size: 6.4rem;
+    color: #3C3E4C;
+    display: flex;
+    justify-content: center;
+}
+
+.register-input {
+    background-color: #6a4242;
+    border-radius: 2rem;
+    padding: 2rem 4.5rem 2rem 6.1rem;
+    width: 73.3rem;
+    height: 7.3rem;
+    margin-bottom: 5.3rem;
+
+}
+
+.register-input>input {
+    font-family: "RobotoRegular";
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    margin: 2.8rem;
+}

@@ -2,7 +2,7 @@ html {
   font-size: 62.5%;
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 256rem) {
   html {
     font-size: 83.3%;
   }
@@ -99,14 +99,14 @@ nav>img {
   height: 3.2rem;
 }
 
-body {
-  background-color: #F5F6FF;
-}
+/* body {
+  background-color: #202b8e;
+} */
 
 .container {
-  max-width: 1280px;
+  max-width: 128rem;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .cards {
@@ -116,7 +116,8 @@ body {
 }
 
 .card {
-  max-width: 60rem;
+  width: 60rem;
+  height: 51.5rem;
   box-shadow: 26px 25px 75px #E6E7F6;
   border-radius: 2rem;
   margin-bottom: 8rem;
@@ -233,7 +234,7 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 5.3rem;
+  gap: 2.5rem;
   font-family: "RobotoRegular";
   font-size: 2.4rem;
   color: #3C3E4C;
@@ -244,7 +245,7 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 5.3rem;
+  gap: 2.5rem;
   font-family: "RobotoRegular";
   font-size: 2.4rem;
   color: #3C3E4C;
@@ -371,15 +372,34 @@ body {
   color: #3C3E4C;
 }
 
-.card-body-input>button>img {
-  width: 1.6rem;
-  height: 1.6rem;
+.card-body-input-plus {
+  font-size: 1.4rem;
+  font-family: "RobotoRegular";
+  color: #FFF;
+  background-color: #636AA3;
+  max-width: 12.5rem;
+  height: 4rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
 }
 
-/* .card-body-files {
+.card-body-input-plus>p {
+  background-color: #636AA3;
+  font-size: 1.4rem;
+  font-family: "RobotoRegular";
+  color: #FFF;
+} 
+
+.card-body-files {
   display: flex;
   gap: 1.6rem;
-} */
+  flex-wrap: wrap;
+}
 
 .onefile {
   border-radius: 1rem;
@@ -388,8 +408,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  max-width: 20.7rem;
-  height: 4.8rem;
+  height: 1.6rem;
   padding: 1.6rem;
 }
 
