@@ -1,0 +1,207 @@
+@import url(../css/base.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F6FF;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.title>img {
+    width: 5.3rem;
+    height: 5.3rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title>p {
+    font-size: 3.6rem;
+    font-family: 'JostSemiBold';
+    color: #3C3E4C;
+}
+
+
+.tasks-two-columns {
+    display: flex;
+    gap: 6.8rem;
+    justify-content: center;
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+
+.tasks-left {
+    width: 65rem;
+}
+
+.all-tasks {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 25px 25px 75px #E6E7F6;
+    border-radius: 1rem;
+    padding: 3.5rem 4rem;
+    max-width: 55.7rem;
+    height: 51.8rem;
+}
+
+.all-tasks-task {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.all-tasks-task>input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 0.1rem solid #3C3E4C;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 1.6rem; 
+}
+
+.all-tasks-task>input:checked {
+    background-color: #3C3E4C;
+    border-color: #3C3E4C;
+}
+
+.all-tasks-task>input:checked::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1.2rem;
+    height: 0.6rem;
+    border-left: 0.3rem solid #FFF;
+    border-bottom: 0.3rem solid #FFF;
+    transform: translate(-50%, -60%) rotate(-45deg);
+}
+
+.all-tasks-task>input:checked+label {
+    text-decoration: line-through;
+    color: #9AA0C3;
+}
+
+.all-tasks-task>label {
+    cursor: pointer;
+    font-family: "RobotoRegular";
+    font-size: 2rem;
+    color: #3C3E4C;
+    white-space: nowrap;
+    flex-grow: 1;
+    margin-right: 1rem;
+    min-width: 0;
+}
+
+.all-tasks-task>p {
+    font-family: "RobotoRegular";
+    font-size: 2rem;
+    color: #3C3E4C;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-tasks-task-line {
+    height: 0.1rem;
+    background-color: #3C3E4C;
+    position: absolute;
+    bottom: 0;
+    left: 4.8rem;
+    right: 0;
+}
+
+.tasks-right {
+    width: 50rem;
+}
+
+.add-task-form {
+    background-color: #FFFFFF;
+    box-shadow: 25px 25px 75px #E6E7F6;
+    border-radius: 1rem;
+    padding: 4.1rem 5.1rem 4.4rem 2.8rem;
+    max-width: 65.7rem;
+    height: 51.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-task-input input {
+    width: 100%;
+    font-family: "RobotoRegular";
+    font-size: 2.4rem;
+    color: #3C3E4C;
+    margin-bottom: 26.8rem;
+    border: none;
+    outline: none;
+}
+
+
+.new-task-input input::placeholder {
+    color: #A0A0A0;
+}
+
+.deadline-section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.deadline-label {
+    font-family: 'JostSemiBold';
+    font-size: 2rem;
+    color: #3C3E4C;
+}
+
+
+.deadline-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.deadline-icon-button img {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.deadline-display {
+    font-family: "RobotoRegular";
+    font-size: 2rem;
+    color: #3C3E4C;
+    min-width: 15rem;
+}
+
+.add-task-button {
+    font-family: 'RobotoRegular';
+    font-size: 2.4rem;
+    color: #FFFFFF;
+    background-color: #636AA3;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.1rem 3.9rem;
+    cursor: pointer;
+    margin-top: auto;  
+    align-self: flex-end;
+}

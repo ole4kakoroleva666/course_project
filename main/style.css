@@ -2,15 +2,20 @@ html {
   font-size: 62.5%;
 }
 
-@media (min-width: 256rem) {
+body{
+    background-color: #F5F6FF;
+}
+
+/* @media (min-width: 2560px) {
   html {
     font-size: 83.3%;
   }
-}
+} */
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 button,
@@ -24,14 +29,14 @@ button:focus,
 button:focus-visible {
   outline: none;
   box-shadow: none;
-  background: none;
   border: none;
   transform: none;
 }
 
+
 @font-face {
   font-family: "RobotoRegular";
-  src: url("../fonts/Roboto/static/Roboto-Regular.ttf")
+  src: url("../fonts/Roboto/static/Roboto-Regular.ttf");
 }
 
 @font-face {
@@ -45,23 +50,24 @@ button:focus-visible {
 }
 
 @font-face {
-  font-family: 'JostRegular';
-  src: url('../fonts/Jost/Jost-Regular.ttf');
+  font-family: "JostRegular";
+  src: url("../fonts/Jost/Jost-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'JostSemiBold';
-  src: url('../fonts/Jost/Jost-SemiBold.ttf');
+  font-family: "JostSemiBold";
+  src: url("../fonts/Jost/Jost-SemiBold.ttf");
 }
 
 @font-face {
-  font-family: 'JostMedium';
-  src: url('../fonts/Jost/static/Jost-Medium.ttf');
+  font-family: "JostMedium";
+  src: url("../fonts/Jost/static/Jost-Medium.ttf");
 }
+
 
 h2 {
   font-size: 3.2rem;
-  font-family: 'JostSemiBold';
+  font-family: "JostSemiBold";
   color: #3C3E4C;
 }
 
@@ -69,6 +75,8 @@ a {
   color: #64677E;
   font-size: 2rem;
 }
+
+/*HEADER*/
 
 header {
   background-color: #CFD3EB;
@@ -99,15 +107,12 @@ nav>img {
   height: 3.2rem;
 }
 
-/* body {
-  background-color: #202b8e;
-} */
 
 .container {
   max-width: 128rem;
   margin: 0 auto;
-  padding: 2rem;
 }
+
 
 .cards {
   display: flex;
@@ -118,9 +123,10 @@ nav>img {
 .card {
   width: 60rem;
   height: 51.5rem;
-  box-shadow: 26px 25px 75px #E6E7F6;
   border-radius: 2rem;
+  box-shadow: 26px 25px 75px #E6E7F6;
   margin-bottom: 8rem;
+  overflow: hidden;
 }
 
 .card-head {
@@ -136,9 +142,9 @@ nav>img {
   background-color: #FFF;
   padding: 3.2rem;
   height: 45.5rem;
-  width: 53.5rem;
-  border-radius: 0 0 2rem 2rem;
 }
+
+/* INPUTS */
 
 .card-body-input {
   display: flex;
@@ -149,9 +155,9 @@ nav>img {
 
 .card-body-input>input {
   font-size: 2.6rem;
-  border: solid 1px #000;
+  border: 1px solid #3C3E4C;
   border-radius: 1rem;
-  padding: 1.4rem 0 1.4rem 2rem;
+  padding: 1.4rem 2rem;
   width: 100%;
 }
 
@@ -164,6 +170,8 @@ nav>img {
   cursor: pointer;
 }
 
+/* TASKS */
+
 .card-body-tasks {
   display: flex;
   flex-direction: column;
@@ -171,13 +179,12 @@ nav>img {
   font-size: 2.6rem;
   color: #3C3E4C;
   font-family: "RobotoRegular";
-  margin-top: 7rem;
 }
 
 .card-body-tasks-task {
   display: flex;
+  align-items: center;
   gap: 1.6rem;
-
 }
 
 .card-body-tasks-task>input {
@@ -188,17 +195,16 @@ nav>img {
   border: 0.1rem solid #3C3E4C;
   border-radius: 25%;
   cursor: pointer;
-  display: inline-block;
   position: relative;
 }
 
-/* Активное состояние */
+/* Checked */
 .card-body-tasks-task>input:checked {
   background-color: #3C3E4C;
   border-color: #3C3E4C;
 }
 
-/* Галочка */
+/* Checkmark */
 .card-body-tasks-task>input:checked::after {
   content: "";
   position: absolute;
@@ -206,14 +212,20 @@ nav>img {
   top: 50%;
   width: 1.2rem;
   height: 0.6rem;
-  border-left: 3px solid white;
-  border-bottom: 3px solid white;
+  border-left: 0.3rem solid #FFF;
+  border-bottom: 0.3rem solid #FFF;
   transform: translate(-50%, -60%) rotate(-45deg);
 }
 
 .card-body-tasks-task>input:checked+label {
   text-decoration: line-through;
-  color: #9aa0c3;
+  color: #9AA0C3;
+}
+
+/* CALENDAR */
+.card-body-calendar {
+  padding: 3.2rem;
+  background-color: #fff;
 }
 
 .card-body-calendar-month {
@@ -222,56 +234,92 @@ nav>img {
   color: #3C3E4C;
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3.2rem;
 }
 
 .calendar {
-  margin: 5rem;
+  padding-bottom: 2rem;
 }
 
 .card-calendar-week {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 2.5rem;
+  gap: 1rem;
   font-family: "RobotoRegular";
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: #3C3E4C;
-
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .card-calendar-days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 2.5rem;
+  gap: 1rem;
   font-family: "RobotoRegular";
   font-size: 2.4rem;
+}
+
+.card-calendar-days > .day {
+  text-align: center;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.card-calendar-days > .day {
   color: #3C3E4C;
 }
 
-/* .card-calendar-days-after {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  font-family: "RobotoRegular";
-  font-size: 2.4rem;
-  color: #636AA3;
-} */
+.card-calendar-days > .day-next {
+  color: #A8A9E3;
+  opacity: 0.7;
+}
+
+.card-calendar-week > .week {
+  text-align: center;
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-calendar-days > .day:hover,
+.card-calendar-days > .day-next:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.card-calendar-days > .day:nth-child(23) {
+  background-color: #636AA3;
+  color: white;
+  border-radius: 2rem;
+}
+
+/*  SHEDULE */
+
+
+.card-body-shedule {
+  position: relative;
+}
 
 .sheduleheader {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3.2rem;
+  align-items: center;
 }
 
 .sheduleheader>a {
+  background-color: #636AA3;
   font-family: "RobotoRegular";
   color: #FFF;
   font-size: 1.6rem;
-  background-color: #636AA3;
   border-radius: 1rem;
-  padding: 1.6rem 1.6rem;
+  padding: 1.6rem;
   cursor: pointer;
 }
 
@@ -279,52 +327,12 @@ nav>img {
   font-family: "RobotoMedium";
   font-size: 1.6rem;
   color: #3C3E4C;
-  display: flex;
-  align-items: center;
+  max-height: 2rem;
 }
 
-.time {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.6rem;
-  color: #3C3E4C;
-  font-family: "RobotoRegular";
-}
-
-.time>img {
-  width: 1.7rem;
-  height: 1.7rem;
-}
-
-.subject {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.6rem;
-  color: #3C3E4C;
-  font-family: "RobotoRegular";
-}
-
-.subject>img {
-  width: 1.7rem;
-  height: 1.7rem;
-}
-
-.classroom {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.6rem;
-  color: #3C3E4C;
-  font-family: "RobotoRegular";
-}
-
-.classroom>img {
-  width: 1.7rem;
-  height: 1.7rem;
-}
-
+.time,
+.subject,
+.classroom,
 .teacher {
   display: flex;
   align-items: center;
@@ -334,26 +342,64 @@ nav>img {
   font-family: "RobotoRegular";
 }
 
-.teacher>img {
+.tme img,
+.subject img,
+.classroom img,
+.teacher img {
   width: 1.7rem;
   height: 1.7rem;
 }
 
 .shedule {
-  margin-top: 3.2rem;
   display: flex;
-  gap: 0.5rem;
   flex-direction: column;
+  gap: 0.5rem;
 }
+
+.shedules {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  max-height: 30em;
+  overflow-y: auto;
+}
+
+.shedules::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
+}
+
+.shedules::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.shedules::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0.8rem;
+}
+
+.shedules::-webkit-scrollbar-thumb {
+  background: #636AA3;
+  border-radius: 0.8rem;
+}
+
+/* NOTES */
 
 .card-body-notes {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 3.2rem;
 }
 
 .card-body-notes-note {
-  border: solid 1px #000;
+  border: 1px solid #3C3E4C;
   border-radius: 1rem;
   padding: 1.6rem;
   width: 25.2rem;
@@ -368,32 +414,31 @@ nav>img {
 
 .main-text {
   font-family: "RobotoRegular";
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #3C3E4C;
 }
 
+/* FILES */
+
 .card-body-input-plus {
-  font-size: 1.4rem;
-  font-family: "RobotoRegular";
-  color: #FFF;
-  background-color: #636AA3;
-  max-width: 12.5rem;
-  height: 4rem;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
-  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  margin-bottom: 3.2rem;
-}
-
-.card-body-input-plus>p {
-  background-color: #636AA3;
   font-size: 1.4rem;
   font-family: "RobotoRegular";
   color: #FFF;
-} 
+  background-color: #636AA3;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  cursor: pointer;
+  margin-bottom: 3.2rem;
+}
+
+.card-body-input-plus p {
+  background-color: #636AA3;
+  font-size: 1.4rem;
+  color: #FFF;
+}
 
 .card-body-files {
   display: flex;
@@ -402,13 +447,11 @@ nav>img {
 }
 
 .onefile {
-  border-radius: 1rem;
-  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-  background-color: #DFE1F1;
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  height: 1.6rem;
+  background-color: #DFE1F1;
+  border-radius: 1rem;
   padding: 1.6rem;
 }
 
@@ -419,6 +462,6 @@ nav>img {
 }
 
 .icons {
-  max-height: 1.6rem;
   max-width: 1.6rem;
+  max-height: 1.6rem;
 }

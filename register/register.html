@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <title>StudentPlanner</title>
     <link rel="stylesheet" href="register.css">
 </head>
-
 <body>
     <main>
         <div class="container-register">
             <div class="register">
                 <h1>Регистрация</h1>
+                
                 <div class="register-input">
-                    <input type="text" placeholder="Адрес электронной почты">
+                    <input type="email" placeholder="Адрес электронной почты">
+                </div>
+                
+                <div class="register-input">
+                    <input type="text" placeholder="Имя пользователя">
+                </div>
+                
+                <div class="register-input">
+                    <input type="password" placeholder="Пароль">
+                </div>
+                
+                <div class="register-actions">
+                    <button class="register-btn">Создать</button>
+                    <div class="login-link">
+                        У вас уже есть аккаунт? <a href="#">Войти</a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-</body>    
+</body>
+</html>

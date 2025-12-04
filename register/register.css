@@ -1,32 +1,176 @@
 @import url(../css/base.css);
 
-.container-register {
-    margin-top: 26rem;
-    margin-left: 59.4rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* если добавлю падинги, то ширина останется прежней */
 }
 
-.register>h1 {
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CFD3EB;
+}
+
+.container-register {
+    width: 100%;
+    max-width: 128rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register > h1 {
     font-family: "RobotoSemiBold";
     font-size: 6.4rem;
     color: #3C3E4C;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-bottom: 5.3rem;
 }
 
 .register-input {
-    background-color: #6a4242;
-    border-radius: 2rem;
+    background-color: #F5F6FF;
+    border-radius: 1rem;
     padding: 2rem 4.5rem 2rem 6.1rem;
     width: 73.3rem;
     height: 7.3rem;
     margin-bottom: 5.3rem;
-
+    border: 0.2rem solid #F5F6FF;
+    transition: border-color 0.3s;
 }
 
-.register-input>input {
+.register-input:hover,
+.register-input:focus-within {
+    border-color: #636AA3;
+}
+
+.register-input > input {
     font-family: "RobotoRegular";
     font-size: 2.4rem;
-    display: flex;
-    align-items: center;
-    margin: 2.8rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #3C3E4C;
 }
+
+.register-input > input::placeholder {
+    color: #999;
+}
+
+.register-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5.3rem;
+}
+
+.register-btn {
+    background-color: #636AA3;
+    color: white;
+    font-family: "RobotoMedium";
+    font-size: 2.4rem;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2rem 8rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.register-btn:hover {
+    background-color: #4f5691;
+}
+
+.login-link {
+    font-family: "RobotoRegular";
+    font-size: 1.8rem;
+    color: #3C3E4C;
+    text-align: center;
+}
+
+.login-link a {
+    color: #636AA3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+.register-input:last-of-type {
+    margin-bottom: 10rem;
+    position: relative;
+}
+
+/* @media (max-width: 1600px) {
+    .register {
+        max-width: 65rem;
+        padding: 5rem 6rem;
+    }
+    
+    .register > h1 {
+        font-size: 5.5rem;
+        margin-bottom: 5rem;
+    }
+    
+    .register-input {
+        height: 6.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .register {
+        max-width: 55rem;
+        padding: 4rem 5rem;
+    }
+    
+    .register > h1 {
+        font-size: 4.8rem;
+    }
+    
+    .register-input {
+        padding: 1.5rem 3rem 1.5rem 4rem;
+    }
+    
+    .register-input > input {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .register {
+        max-width: 90%;
+        padding: 3rem 2rem;
+        border-radius: 1.5rem;
+    }
+    
+    .register > h1 {
+        font-size: 3.6rem;
+        margin-bottom: 3rem;
+    }
+    
+    .register-input {
+        height: 5.5rem;
+        margin-bottom: 3rem;
+        padding: 1rem 2rem 1rem 3rem;
+        border-radius: 1.5rem;
+    }
+    
+    .register-input > input {
+        font-size: 1.8rem;
+    }
+    
+    .register-btn {
+        font-size: 2rem;
+        padding: 1.5rem 4rem;
+    } */

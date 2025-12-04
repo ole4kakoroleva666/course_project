@@ -2,15 +2,17 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>StudentPlanner</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
     <header>
         <nav>
-            <img class="logotip" src="../media/newlogo.svg" alt="Логотип">
+            <img class="logotip" src="../media/newlogo.svg" alt="Логотип" />
+
             <a>Главная</a>
             <a>Задачи</a>
             <a>Календарь</a>
@@ -18,49 +20,64 @@
             <a>Расписание</a>
             <a>Заметки</a>
             <a>Моё</a>
-            <img src="../media/Profile.svg" alt="Профиль">
+
+            <img src="../media/Profile.svg" alt="Профиль" />
         </nav>
     </header>
 
     <main>
         <section>
             <div class="container">
+
                 <div class="cards">
+
+                    <!-- Задачи -->
                     <div class="card">
                         <div class="card-head">
                             <h2>Задачи</h2>
                         </div>
+
                         <div class="card-body">
                             <div class="card-body-input">
-                                <input type="text" placeholder="...">
+                                <input type="text" placeholder="..." />
                                 <button>Добавить</button>
                             </div>
+
                             <div class="card-body-tasks">
+
                                 <div class="card-body-tasks-task">
-                                    <input type="checkbox" name="task1">
+                                    <input type="checkbox" id="task1" />
                                     <label for="task1">принести тетрадь</label>
                                 </div>
+
                                 <div class="card-body-tasks-task">
-                                    <input type="checkbox" name="task2">
+                                    <input type="checkbox" id="task2" />
                                     <label for="task2">принести тетрадь</label>
                                 </div>
+
                                 <div class="card-body-tasks-task">
-                                    <input type="checkbox" name="task3">
+                                    <input type="checkbox" id="task3" />
                                     <label for="task3">принести тетрадь</label>
                                 </div>
+
                                 <div class="card-body-tasks-task">
-                                    <input type="checkbox" name="task4">
+                                    <input type="checkbox" id="task4" />
                                     <label for="task4">принести тетрадь</label>
                                 </div>
+
                             </div>
                         </div>
                     </div>
+
+                    <!-- Календарь -->
                     <div class="card">
                         <div class="card-head">
                             <h2>Календарь</h2>
                         </div>
+
                         <div class="card-body-calendar">
                             <div class="card-body-calendar-month">Сентябрь</div>
+
                             <div class="calendar">
                                 <div class="card-calendar-week">
                                     <div class="week">пн</div>
@@ -71,7 +88,9 @@
                                     <div class="week">сб</div>
                                     <div class="week">вс</div>
                                 </div>
+
                                 <div class="card-calendar-days">
+                                    <!-- Сентябрь -->
                                     <div class="day">01</div>
                                     <div class="day">02</div>
                                     <div class="day">03</div>
@@ -103,202 +122,255 @@
                                     <div class="day">29</div>
                                     <div class="day">30</div>
 
-                                    <!-- <div class="card-calendar-days-after">
-                                    <div class="day">01</div>
-                                    <div class="day">02</div>
-                                    <div class="day">03</div>
-                                    <div class="day">04</div>
-                                    <div class="day">05</div>
-                                </div> -->
+                                    <!-- Октябрь -->
+                                    <div class="day day-next">01</div>
+                                    <div class="day day-next">02</div>
+                                    <div class="day day-next">03</div>
+                                    <div class="day day-next">04</div>
+                                    <div class="day day-next">05</div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+                    <!-- Домашнее задание -->
                     <div class="card">
                         <div class="card-head">
                             <h2>Домашнее задание</h2>
                         </div>
+
                         <div class="card-body">
                             <div class="card-body-input">
-                                <input type="text" placeholder="Добавить домашнее задание...">
+                                <input type="text" placeholder="Добавить домашнее задание..." />
                             </div>
+
                             <div class="card-body-tasks">
+
                                 <div class="card-body-tasks-task">
-                                    <input type="checkbox" name="task1">
-                                    <label for="task1">история(до 15.09)</label>
+                                    <input type="checkbox" id="hw1" />
+                                    <label for="hw1">история (до 15.09)</label>
                                 </div>
+
                                 <div class="card-body-tasks-task">
-                                    <input type="checkbox" name="task2">
-                                    <label for="task2">история(до 15.09)</label>
+                                    <input type="checkbox" id="hw2" />
+                                    <label for="hw2">история (до 15.09)</label>
                                 </div>
+
                                 <div class="card-body-tasks-task">
-                                    <input type="checkbox" name="task3">
-                                    <label for="task3">история(до 15.09)</label>
+                                    <input type="checkbox" id="hw3" />
+                                    <label for="hw3">история (до 15.09)</label>
                                 </div>
+
                             </div>
                         </div>
                     </div>
+
+                    <!-- Расписание -->
                     <div class="card">
                         <div class="card-head">
                             <h2>Расписание</h2>
                         </div>
+
                         <div class="card-body">
                             <div class="card-body-shedule">
+
                                 <div class="sheduleheader">
                                     <a>Вчера</a>
-                                    <div class="data">20 ноября, 2025 год (Четверг)</div>
+                                    <p class="data">20 ноября, 2025 год (Четверг)</p>
                                     <a>Завтра</a>
                                 </div>
-                                <div class="shedule">
-                                    <div class="time">
-                                        <img class="icons" src="/media/time.svg" alt="time">
-                                        <p> Время: 14:15 — 15:50 </p>
+                                <div class="shedules">
+                                    <!-- Занятие 1 -->
+                                    <div class="shedule">
+                                        <div class="time">
+                                            <img class="icons" src="/media/time.svg" alt="time" />
+                                            <p>Время: 14:15 — 15:50</p>
+                                        </div>
+
+                                        <div class="subject">
+                                            <img class="icons" src="/media/books.svg" alt="subject" />
+                                            <p>Предмет: Проектирование и разработка интерфейсов</p>
+                                        </div>
+
+                                        <div class="classroom">
+                                            <img class="icons" src="/media/chool.svg" alt="classroom" />
+                                            <p>Аудитория: 1-306</p>
+                                        </div>
+
+                                        <div class="teacher">
+                                            <img class="icons" src="/media/teacher.svg" alt="teacher" />
+                                            <p>Преподаватель: Гунько Григорий Александрович</p>
+                                        </div>
                                     </div>
 
-                                    <div class="subject">
-                                        <img class="icons" src="/media/books.svg" alt="subject">
-                                        <p> Предмет: Проектирование и разработка интерфейсов пользователя </p>
+                                    <!-- Занятие 2 -->
+                                    <div class="shedule">
+                                        <div class="time">
+                                            <img class="icons" src="/media/time.svg" alt="time" />
+                                            <p>Время: 16:10 — 17:45</p>
+                                        </div>
+
+                                        <div class="subject">
+                                            <img class="icons" src="/media/books.svg" alt="subject" />
+                                            <p>Предмет: Проектирование и разработка интерфейсов</p>
+                                        </div>
+
+                                        <div class="classroom">
+                                            <img class="icons" src="/media/chool.svg" alt="classroom" />
+                                            <p>Аудитория: 1-306</p>
+                                        </div>
+
+                                        <div class="teacher">
+                                            <img class="icons" src="/media/teacher.svg" alt="teacher" />
+                                            <p>Преподаватель: Гунько Григорий Александрович</p>
+                                        </div>
                                     </div>
 
-                                    <div class="classroom">
-                                        <img class="icons" src="/media/chool.svg" alt="classroom">
-                                        <p>Аудитория: 1-306</p>
+                                    <!-- Занятие 3 -->
+                                    <div class="shedule">
+                                        <div class="time">
+                                            <img class="icons" src="/media/time.svg" alt="time" />
+                                            <p>Время: 17:55 — 19:30</p>
+                                        </div>
+
+                                        <div class="subject">
+                                            <img class="icons" src="/media/books.svg" alt="subject" />
+                                            <p>Предмет: Проектирование и разработка интерфейсов</p>
+                                        </div>
+
+                                        <div class="classroom">
+                                            <img class="icons" src="/media/chool.svg" alt="classroom" />
+                                            <p>Аудитория: 1-306</p>
+                                        </div>
+
+                                        <div class="teacher">
+                                            <img class="icons" src="/media/teacher.svg" alt="teacher" />
+                                            <p>Преподаватель: Гунько Григорий Александрович</p>
+                                        </div>
                                     </div>
 
-                                    <div class="teacher">
-                                        <img class="icons" src="/media/teacher.svg" alt="teacher">
-                                        <p>Препод: Гунько Григорий Александрович</p>
+                                    <!-- Занятие 4 -->
+                                    <div class="shedule">
+                                        <div class="time">
+                                            <img class="icons" src="/media/time.svg" alt="time" />
+                                            <p>Время: 17:55 — 19:30</p>
+                                        </div>
+
+                                        <div class="subject">
+                                            <img class="icons" src="/media/books.svg" alt="subject" />
+                                            <p>Предмет: Проектирование и разработка интерфейсов</p>
+                                        </div>
+
+                                        <div class="classroom">
+                                            <img class="icons" src="/media/chool.svg" alt="classroom" />
+                                            <p>Аудитория: 1-306</p>
+                                        </div>
+
+                                        <div class="teacher">
+                                            <img class="icons" src="/media/teacher.svg" alt="teacher" />
+                                            <p>Преподаватель: Гунько Григорий Александрович</p>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="shedule">
-                                    <div class="time">
-                                        <img class="icons" src="/media/time.svg" alt="time">
-                                        <p> Время: 16:10 — 17:45 </p>
-                                    </div>
 
-                                    <div class="subject">
-                                        <img class="icons" src="/media/books.svg" alt="subject">
-                                        <p> Предмет: Проектирование и разработка интерфейсов пользователя </p>
-                                    </div>
-
-                                    <div class="classroom">
-                                        <img class="icons" src="/media/chool.svg" alt="classroom">
-                                        <p>Аудитория: 1-306</p>
-                                    </div>
-                                    <div class="teacher">
-                                        <img class="icons" src="/media/teacher.svg" alt="teacher">
-                                        <p>Препод: Гунько Григорий Александрович</p>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="shedule">
-                                    <div class="time">
-                                        <img class="icons" src="/media/time.svg" alt="time">
-                                        <p> Время: 17:55 — 19:30 </p>
-                                    </div>
-
-                                    <div class="subject">
-                                        <img class="icons" src="/media/books.svg" alt="subject">
-                                        <p> Предмет: Проектирование и разработка интерфейсов пользователя </p>
-                                    </div>
-
-                                    <div class="classroom">
-                                        <img class="icons" src="/media/chool.svg" alt="classroom">
-                                        <p>Аудитория: 1-306</p>
-                                    </div>
-
-                                    <div class="teacher">
-                                        <img class="icons" src="/media/teacher.svg" alt="teacher">
-                                        <p>Препод: Гунько Григорий Александрович</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Заметки -->
                     <div class="card">
                         <div class="card-head">
                             <h2>Заметки</h2>
                         </div>
+
                         <div class="card-body">
                             <div class="card-body-input">
-                                <input type="text" placeholder="Заметка...">
+                                <input type="text" placeholder="Заметка..." />
                             </div>
+
                             <div class="card-body-notes">
+
                                 <div class="card-body-notes-note">
                                     <div class="title">Лекция ГДиМ</div>
-                                    <div class="main-text">Графический дизайн — это
-                                        визуальная коммуникация, которая использует изображения, типографику и цвета для
-                                        передачи сообщений, идей и концепций.</div>
+                                    <div class="main-text">
+                                        Графический дизайн — это визуальная коммуникация, которая использует
+                                        изображения, типографику и цвета для передачи сообщений.
+                                    </div>
                                 </div>
 
                                 <div class="card-body-notes-note">
                                     <div class="title">Сделать за лето</div>
-                                    <div class="main-text">5 лаб по всем предметам, а также сделать кормушку, прочтиать
-                                        10 книг, выучить все таки английский
-                                        Путешествия: поездка на море, в горы или за границу; исследование новых городов
-                                        или природных мест; посещение национальных парков.
-                                        Отдых и развлечения: пикники, походы на природу, посещение фестивалей или
-                                        концертов; времяпрепровождение с друзьями и семьей.
-                                        Хобби и саморазвитие: изучение нового языка, освоение музыкального инструмента,
-                                        чтение книг, занятие спортом или творчеством.</div>
+                                    <div class="main-text">
+                                        5 лаб по всем предметам, прочитать 10 книг, выучить английский. Путешествия:
+                                        море, горы, парки. Развлечения: пикники, фестивали. Хобби: язык, музыка, спорт,
+                                        творчество.
+                                    </div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
 
+                    <!-- Файлы -->
                     <div class="card">
                         <div class="card-head">
                             <h2>Мои файлы</h2>
                         </div>
+
                         <div class="card-body">
-                            <div class="card-body-input-plus">
-                                <button>Добавить<img class="icons" src="/media/plus.svg" Добавить>
+
+                            <div>
+                                <button class="card-body-input-plus">
+                                    <img class="icons" src="/media/plus.svg" alt="Добавить" />
+                                    Добавить
                                 </button>
                             </div>
+
                             <div class="card-body-files">
+
                                 <div class="onefile">
-                                    <img class="icons" src="/media/word.svg" alt="word">
+                                    <img class="icons" src="/media/word.svg" alt="word" />
                                     <p>Лаба история.docx</p>
-                                    <img class="icons" src="/media/dots.svg" alt="dots">
+                                    <img class="icons" src="/media/dots.svg" alt="dots" />
                                 </div>
 
                                 <div class="onefile">
-                                    <img class="icons" src="/media/word.svg" alt="word">
+                                    <img class="icons" src="/media/word.svg" alt="word" />
                                     <p>Лаба история.docx</p>
-                                    <img class="icons" src="/media/dots.svg" alt="dots">
+                                    <img class="icons" src="/media/dots.svg" alt="dots" />
                                 </div>
 
                                 <div class="onefile">
-                                    <img class="icons" src="/media/zip.svg" alt="zip">
+                                    <img class="icons" src="/media/zip.svg" alt="zip" />
                                     <p>Курсач.zip</p>
-                                    <img class="icons" src="/media/dots.svg" alt="dots">
+                                    <img class="icons" src="/media/dots.svg" alt="dots" />
                                 </div>
 
                                 <div class="onefile">
-                                    <img class="icons" src="/media/text.svg" alt="zip">
+                                    <img class="icons" src="/media/text.svg" alt="text" />
                                     <p>normalize.css</p>
-                                    <img class="icons" src="/media/dots.svg" alt="dots">
+                                    <img class="icons" src="/media/dots.svg" alt="dots" />
                                 </div>
 
                                 <div class="onefile">
-                                    <img class="icons" src="/media/zip.svg" alt="zip">
+                                    <img class="icons" src="/media/zip.svg" alt="zip" />
                                     <p>Курсач.zip</p>
-                                    <img class="icons" src="/media/dots.svg" alt="dots">
+                                    <img class="icons" src="/media/dots.svg" alt="dots" />
                                 </div>
 
                             </div>
 
                         </div>
                     </div>
+
                 </div>
 
             </div>
         </section>
     </main>
+
+</body>
 
 </html>
