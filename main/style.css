@@ -6,11 +6,6 @@ body{
     background-color: #F5F6FF;
 }
 
-/* @media (min-width: 2560px) {
-  html {
-    font-size: 83.3%;
-  }
-} */
 
 * {
   margin: 0;
@@ -76,7 +71,6 @@ a {
   font-size: 2rem;
 }
 
-/*HEADER*/
 
 header {
   background-color: #CFD3EB;
@@ -144,7 +138,6 @@ nav>img {
   height: 45.5rem;
 }
 
-/* INPUTS */
 
 .card-body-input {
   display: flex;
@@ -170,7 +163,6 @@ nav>img {
   cursor: pointer;
 }
 
-/* TASKS */
 
 .card-body-tasks {
   display: flex;
@@ -198,13 +190,11 @@ nav>img {
   position: relative;
 }
 
-/* Checked */
 .card-body-tasks-task>input:checked {
   background-color: #3C3E4C;
   border-color: #3C3E4C;
 }
 
-/* Checkmark */
 .card-body-tasks-task>input:checked::after {
   content: "";
   position: absolute;
@@ -222,7 +212,6 @@ nav>img {
   color: #9AA0C3;
 }
 
-/* CALENDAR */
 .card-body-calendar {
   padding: 3.2rem;
   background-color: #fff;
@@ -299,7 +288,6 @@ nav>img {
   border-radius: 2rem;
 }
 
-/*  SHEDULE */
 
 
 .card-body-shedule {
@@ -390,7 +378,6 @@ nav>img {
   border-radius: 0.8rem;
 }
 
-/* NOTES */
 
 .card-body-notes {
   display: flex;
@@ -418,7 +405,6 @@ nav>img {
   color: #3C3E4C;
 }
 
-/* FILES */
 
 .card-body-input-plus {
   display: flex;

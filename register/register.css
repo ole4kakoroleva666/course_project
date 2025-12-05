@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* если добавлю падинги, то ширина останется прежней */
+    box-sizing: border-box;
 }
 
 body {

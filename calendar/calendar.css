@@ -1,0 +1,145 @@
+@import url(../css/base.css);
+
+body {
+    background-color: #F5F6FF;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.title>img {
+    width: 5.3rem;
+    height: 5.3rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title>p {
+    font-size: 3.6rem;
+    font-family: 'JostSemiBold';
+    color: #3C3E4C;
+}
+
+.month>p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3.6rem;
+    font-family: 'JostRegular';
+    color: #3C3E4C;
+    margin-bottom: 2rem;
+}
+
+.calendar-wrapper {
+    background-color: #FFF;
+    padding: 0;
+    box-shadow: 26rem 25rem 75rem #E6E7F6;
+    max-width: 128rem;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-left: 0.1rem solid #3C3E4C;
+    margin-bottom: 4.6rem;
+}
+
+
+.calendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 0.1rem solid #3C3E4C; 
+    border-top: 0.1rem solid #3C3E4C;
+}
+
+.week-day {
+    font-family: 'RobotoMedium';
+    font-size: 1.8rem;
+    color: #3C3E4C;
+    text-align: center;
+    padding: 1.5rem;
+    border-right: 0.1rem solid #3C3E4C;
+    background-color: #F9FAFF;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+    min-height: 12rem;
+    border-right: 0.1rem solid #3C3E4C;
+    border-bottom: 0.1rem solid #3C3E4C;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem 1rem 0 0;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.day-number {
+    font-family: 'RobotoMedium';
+    font-size: 2.4rem;
+    color: #3C3E4C;
+    margin-bottom: 1rem;
+}
+
+.day-markers {
+    position: absolute;
+    bottom: 3rem;
+    right: 5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+.marker {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+
+.marker img {
+    width: 3.8rem;
+    height: 3.8rem;
+}
+
+.marker-count {
+    font-family: 'RobotoRegular';
+    font-size: 2rem;
+    color: #3C3E4C;
+    min-width: 1.5rem;
+    text-align: center;
+}
+
+.day-today {
+    background-color: #636AA3;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 1rem 0 0;
+}
+
+.day-today .day-number {
+    color: white;
+}
+
+.day-today .marker-count {
+    color: white;
+}
+
+.day.next-month .day-number {
+    color: #A8A9E3;
+    opacity: 0.6;
+}
+
+.day.next-month .marker-count {
+    color: #A8A9E3;
+    opacity: 0.6;
+}
