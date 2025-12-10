@@ -23,7 +23,7 @@ body {
     align-items: center;
 }
 
-.register > h1 {
+.register>h1 {
     font-family: "RobotoSemiBold";
     font-size: 6.4rem;
     color: #3C3E4C;
@@ -47,7 +47,7 @@ body {
     border-color: #636AA3;
 }
 
-.register-input > input {
+.register-input>input {
     font-family: "RobotoRegular";
     font-size: 2.4rem;
     width: 100%;
@@ -57,7 +57,7 @@ body {
     color: #3C3E4C;
 }
 
-.register-input > input::placeholder {
+.register-input>input::placeholder {
     color: #999;
 }
 
@@ -69,6 +69,14 @@ body {
     margin-top: 5.3rem;
 }
 
+.register-btn:focus,
+.register-btn:focus-visible {
+    background-color: #636AA3;
+    color: white;
+    outline: none;
+    border: none;
+}
+
 .register-btn {
     background-color: #636AA3;
     color: white;
@@ -78,13 +86,17 @@ body {
     border-radius: 1.5rem;
     padding: 2rem 8rem;
     cursor: pointer;
-    transition: background-color 0.3s;
     width: 100%;
     max-width: 30rem;
 }
 
 .register-btn:hover {
     background-color: #4f5691;
+}
+
+.register-btn:active {
+    background-color: #3C3E4C;
+    transform: scale(1); /*для клика*/
 }
 
 .login-link {
@@ -111,66 +123,128 @@ body {
     position: relative;
 }
 
-/* @media (max-width: 1600px) {
-    .register {
-        max-width: 65rem;
-        padding: 5rem 6rem;
+@media (max-width: 1280px) {
+    html {
+        font-size: 60%;
     }
-    
+
+    .container-register {
+        max-width: 60rem;
+    }
+
     .register > h1 {
         font-size: 5.5rem;
-        margin-bottom: 5rem;
     }
-    
+
     .register-input {
-        height: 6.5rem;
-        margin-bottom: 4rem;
+        width: 100%;
+    }
+
+    .register-input > input {
+        font-size: 2.2rem;
     }
 }
 
-@media (max-width: 1200px) {
-    .register {
-        max-width: 55rem;
-        padding: 4rem 5rem;
+@media (max-width: 992px) {
+    html {
+        font-size: 55%;
     }
-    
+
+    .container-register {
+        max-width: 48rem;
+    }
+
     .register > h1 {
         font-size: 4.8rem;
     }
-    
+
     .register-input {
-        padding: 1.5rem 3rem 1.5rem 4rem;
+        width: 100%;
+        padding: 1.8rem 3rem;
+        height: 6.5rem;
     }
-    
+
     .register-input > input {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .register-btn {
+        font-size: 2.2rem;
     }
 }
 
 @media (max-width: 768px) {
-    .register {
-        max-width: 90%;
-        padding: 3rem 2rem;
-        border-radius: 1.5rem;
+    html {
+        font-size: 50%;
     }
-    
+
+    .container-register {
+        max-width: 90%;
+    }
+
+    .register > h1 {
+        font-size: 4.4rem;
+    }
+
+    .register-input {
+        padding: 1.8rem 3rem;
+        height: 6.5rem;
+    }
+
+    .register-input > input {
+        font-size: 2.2rem;
+    }
+
+    .register-btn {
+        padding: 1.6rem 4rem;
+        font-size: 2.2rem;
+    }
+
+    .login-link {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+
     .register > h1 {
         font-size: 3.6rem;
         margin-bottom: 3rem;
     }
-    
+
     .register-input {
-        height: 5.5rem;
-        margin-bottom: 3rem;
-        padding: 1rem 2rem 1rem 3rem;
-        border-radius: 1.5rem;
+        padding: 1.5rem 2.5rem;
+        height: 6rem;
+        margin-bottom: 3.5rem;
     }
-    
+
     .register-input > input {
-        font-size: 1.8rem;
-    }
-    
-    .register-btn {
         font-size: 2rem;
-        padding: 1.5rem 4rem;
-    } */
+    }
+
+    .register-btn {
+        padding: 1.6rem 4rem;
+        font-size: 2rem;
+    }
+
+    .login-link {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 40%;
+    }
+
+    .register > h1 {
+        font-size: 3rem;
+    }
+
+    .register-btn {
+        max-width: 26rem;
+    }
+}

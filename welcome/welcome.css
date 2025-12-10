@@ -1,6 +1,6 @@
 @import url(../css/base.css);
 
-.main {
+body {
     background-color: #CFD3EB;
 }
 
@@ -62,5 +62,152 @@ button {
     font-size: 2.4rem;
     text-decoration: underline;
     margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
 
+}
+
+@media (max-width: 1280px) {
+    .containerwelcome {
+        margin-left: 10rem;
+        margin-top: 8rem;
+    }
+
+    .main-text h1 {
+        font-size: 5.2rem;
+    }
+
+    .main-text p {
+        font-size: 3rem;
+        max-width: 70rem;
+    }
+
+    .login {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .containerwelcome {
+        margin-left: 0;
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-text h1 {
+        font-size: 4.8rem;
+        max-width: 100%;
+    }
+
+    .main-text p {
+        font-size: 2.8rem;
+        max-width: 60rem;
+    }
+
+    .login {
+        justify-content: center;
+    }
+
+    button,
+    .register {
+        font-size: 2.4rem;
+        padding: 1.1rem 3.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logotip {
+        width: 26rem;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    .main-text h1 {
+        font-size: 4rem;
+    }
+
+    .main-text p {
+        font-size: 2.4rem;
+    }
+
+    .login {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    button,
+    .register {
+        width: 100%;
+        padding: 1.4rem 0;
+        font-size: 2.2rem;
+    }
+
+    .more-information {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerwelcome {
+        margin-top: 4rem;
+    }
+
+    .logotip img {
+        width: 22rem;
+    }
+
+    .main-text h1 {
+        font-size: 3.4rem;
+    }
+
+    .main-text p {
+        font-size: 2rem;
+        max-width: 90%;
+    }
+
+    button,
+    .register {
+        font-size: 2rem;
+        padding: 1.2rem 0;
+    }
+
+    .more-information {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .main-text h1 {
+        font-size: 3rem;
+    }
+
+    .main-text p {
+        font-size: 1.8rem;
+    }
+
+    .logotip img {
+        width: 18rem;
+    }
+
+    .more-information {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-text h1 {
+        font-size: 2.6rem;
+    }
+
+    .main-text p {
+        font-size: 1.6rem;
+    }
+
+    button,
+    .register {
+        font-size: 1.8rem;
+        padding: 1rem 0;
+    }
 }

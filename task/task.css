@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #F5F6FF;
 }
 
@@ -56,6 +56,7 @@ body{
     padding: 3.5rem 4rem;
     max-width: 55.7rem;
     height: 51.8rem;
+    overflow-y: auto;
 }
 
 .all-tasks-task {
@@ -76,7 +77,7 @@ body{
     cursor: pointer;
     position: relative;
     flex-shrink: 0;
-    margin-right: 1.6rem; 
+    margin-right: 1.6rem;
 }
 
 .all-tasks-task>input:checked {
@@ -193,6 +194,16 @@ body{
     min-width: 15rem;
 }
 
+
+.add-task-button:focus,
+.add-task-button:focus-visible {
+    background-color: #636AA3;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+
 .add-task-button {
     font-family: 'RobotoRegular';
     font-size: 2.4rem;
@@ -202,6 +213,171 @@ body{
     border-radius: 1rem;
     padding: 1.1rem 3.9rem;
     cursor: pointer;
-    margin-top: auto;  
+    margin-top: auto;
     align-self: flex-end;
+}
+
+.add-task-button:hover {
+    background-color: #4f5691;
+}
+
+.add-task-button:active {
+    background-color: #3C3E4C;
+    transform: scale(1);
+    /*для клика*/
+}
+
+nav a:first-child {
+    margin-left: 0;
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 93%;
+    }
+
+    .title>p {
+        font-size: 3.4rem;
+    }
+
+    .tasks-two-columns {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 87%;
+    }
+
+    .title>p {
+        font-size: 3rem;
+    }
+
+    .tasks-two-columns {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .tasks-left,
+    .tasks-right {
+        width: 100%;
+    }
+
+    .all-tasks {
+        max-width: 100%;
+        padding: 2rem;
+    }
+
+    .add-task-form {
+        max-width: 100%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+
+    .title>p {
+        font-size: 2.6rem;
+    }
+
+    .tasks-two-columns {
+        gap: 2rem;
+    }
+
+    .tasks-left {
+        width: 100%;
+    }
+
+    .tasks-right {
+        width: 100%;
+    }
+
+    .all-tasks,
+    .add-task-form {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .new-task-input input {
+        font-size: 2rem;
+    }
+
+    .add-task-button {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 70%;
+    }
+
+    .title>p {
+        font-size: 2.2rem;
+    }
+
+    .tasks-two-columns {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .tasks-left,
+    .tasks-right {
+        width: 100%;
+    }
+
+    .all-tasks,
+    .add-task-form {
+        max-width: 100%;
+        padding: 1.2rem;
+    }
+
+    .new-task-input input {
+        font-size: 1.8rem;
+    }
+
+    .add-task-button {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 40%;
+    }
+
+    nav {
+        gap: 1.5rem;
+    }
+
+    .title>p {
+        font-size: 1.8rem;
+    }
+
+    .tasks-two-columns {
+        gap: 1rem;
+    }
+
+    .tasks-left,
+    .tasks-right {
+        width: 100%;
+    }
+
+    .all-tasks,
+    .add-task-form {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .new-task-input input {
+        font-size: 1.6rem;
+    }
+
+    .add-task-button {
+        font-size: 1.8rem;
+    }
 }
