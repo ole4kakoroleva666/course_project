@@ -224,7 +224,6 @@ body {
 .add-task-button:active {
     background-color: #3C3E4C;
     transform: scale(1);
-    /*для клика*/
 }
 
 nav a:first-child {
@@ -233,151 +232,109 @@ nav a:first-child {
 
 @media (max-width: 1280px) {
     html {
-        font-size: 93%;
+        font-size: 60%;
     }
 
-    .title>p {
-        font-size: 3.4rem;
+    .tasks-two-columns {
+        gap: 4rem;
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 58%;
     }
 
     .tasks-two-columns {
         gap: 3rem;
     }
-}
-
-@media (max-width: 992px) {
-    html {
-        font-size: 87%;
-    }
-
-    .title>p {
-        font-size: 3rem;
-    }
-
-    .tasks-two-columns {
-        flex-direction: column;
-        gap: 4rem;
-    }
 
     .tasks-left,
     .tasks-right {
         width: 100%;
     }
 
-    .all-tasks {
-        max-width: 100%;
-        padding: 2rem;
-    }
-
+    .all-tasks,
     .add-task-form {
         max-width: 100%;
-        padding: 2rem;
     }
 }
 
 @media (max-width: 768px) {
     html {
-        font-size: 80%;
+        font-size: 56%;
     }
 
-    .title>p {
-        font-size: 2.6rem;
+    .title {
+        margin-bottom: 4rem;
+    }
+
+    .title>img {
+        width: 4rem;
+        height: 4rem;
     }
 
     .tasks-two-columns {
-        gap: 2rem;
-    }
-
-    .tasks-left {
-        width: 100%;
-    }
-
-    .tasks-right {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
     }
 
     .all-tasks,
     .add-task-form {
-        max-width: 100%;
-        padding: 1.5rem;
+        height: auto;
+    }
+
+    .all-tasks {
+        padding: 3rem;
+    }
+
+    .add-task-form {
+        padding: 3rem;
+    }
+
+    .all-tasks-task>label {
+        white-space: normal;
+        font-size: 1.8rem;
+    }
+
+    .all-tasks-task>p {
+        font-size: 1.6rem;
     }
 
     .new-task-input input {
-        font-size: 2rem;
+        margin-bottom: 6rem;
     }
 
     .add-task-button {
-        font-size: 2.2rem;
+        align-self: center;
+        width: 100%;
+        max-width: 30rem;
     }
 }
 
 @media (max-width: 480px) {
     html {
-        font-size: 70%;
+        font-size: 54%;
     }
 
     .title>p {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
+        text-align: center;
     }
 
-    .tasks-two-columns {
+    .deadline-section {
         flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .tasks-left,
-    .tasks-right {
-        width: 100%;
-    }
-
-    .all-tasks,
-    .add-task-form {
-        max-width: 100%;
-        padding: 1.2rem;
-    }
-
-    .new-task-input input {
-        font-size: 1.8rem;
-    }
-
-    .add-task-button {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 360px) {
-    html {
-        font-size: 40%;
-    }
-
-    nav {
-        gap: 1.5rem;
-    }
-
-    .title>p {
-        font-size: 1.8rem;
-    }
-
-    .tasks-two-columns {
+        align-items: flex-start;
         gap: 1rem;
     }
 
-    .tasks-left,
-    .tasks-right {
-        width: 100%;
+    .deadline-display {
+        min-width: auto;
     }
 
-    .all-tasks,
-    .add-task-form {
-        max-width: 100%;
-        padding: 1rem;
-    }
-
-    .new-task-input input {
-        font-size: 1.6rem;
-    }
-
-    .add-task-button {
-        font-size: 1.8rem;
+    .all-tasks-task-line {
+        left: 0;
     }
 }

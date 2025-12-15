@@ -1,6 +1,6 @@
 @import url(../css/base.css);
 
-body{
+body {
     background-color: #F5F6FF;
 }
 
@@ -18,16 +18,16 @@ body{
     margin-bottom: 9.4rem;
 }
 
-.title > img {
+.title>img {
     width: 5.3rem;
     height: 5.3rem;
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(50%);
 }
 
-.title > p {
+.title>p {
     font-size: 3.6rem;
     font-family: 'JostSemiBold';
     color: #3C3E4C;
@@ -36,6 +36,7 @@ body{
 .main-private-fiels {
     max-width: 128rem;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .file-row {
@@ -116,8 +117,8 @@ body{
     align-items: center;
     gap: 1rem;
     justify-content: flex-end;
+    padding: 0 2rem;
 }
-
 
 .upload-file-text {
     font-family: "RobotoRegular";
@@ -131,7 +132,7 @@ body{
     gap: 1rem;
 }
 
-.upload-file-input>img{
+.upload-file-input>img {
     height: 3rem;
 }
 
@@ -159,4 +160,102 @@ body{
 .upload-file-button:hover {
     background-color: #F0F0F0;
     transform: translateY(-0.1rem);
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 60%;
+    }
+
+    .main-private-fiels {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 58%;
+    }
+
+    .one-private-fiels {
+        gap: 2rem;
+    }
+
+    .private-fiels-name,
+    .private-fiels-changes {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 56%;
+    }
+
+    .title {
+        margin-bottom: 6rem;
+    }
+
+    .title>img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .one-private-fiels {
+        align-items: flex-start;
+        gap: 19rem;
+    }
+
+    .private-fiels-name,
+    .private-fiels-changes {
+        text-align: left;
+        width: 100%;
+    }
+
+    .private-fiels-buttons {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .upload-file {
+        margin-top: 10rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 54%;
+    }
+
+    .title>p {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .one-private-fiels {
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .private-fiels-name,
+    .private-fiels-changes {
+        text-align: left;
+        width: 100%;
+    }
+
+    .upload-file {
+        gap: 2rem;
+    }
+
+    .upload-file-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .upload-file-input {
+        justify-content: center;
+        width: 100%;
+    }
 }

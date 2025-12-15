@@ -1,6 +1,6 @@
 @import url(../css/base.css);
 
-body{
+body {
     background-color: #F5F6FF;
 }
 
@@ -122,4 +122,105 @@ button {
     color: #3C3E4C;
     margin-top: 1.5rem;
     text-align: center;
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 60%;
+    }
+
+    .information-profile {
+        gap: 10rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 58%;
+    }
+
+    .information-profile {
+        gap: 22rem;
+    }
+
+    .field-header,
+    .field-line {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 56%;
+    }
+
+    .title>img {
+        width: 4rem;
+        height: 4rem;
+        inset-block-start: 12rem;
+        inset-inline-start: 2rem;
+    }
+
+    .title>p {
+        margin-bottom: 6rem;
+    }
+
+    .information-profile {
+        flex-direction: column-reverse;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    .profile-right {
+        width: 100%;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 32rem;
+    }
+
+    .profile-fields {
+        width: 100%;
+    }
+
+    .field-header {
+        align-items: center;
+    }
+
+    .field-name {
+        font-size: 2.2rem;
+    }
+
+    .field-edit {
+        font-size: 1.8rem;
+    }
+
+    .exit {
+        display: block;
+        margin: 6rem auto 8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 54%;
+    }
+
+    .title>p {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .profile-card {
+        padding: 4rem 3rem;
+        height: auto;
+    }
+
+    .profile-card>img {
+        width: 15rem;
+        height: auto;
+    }
 }

@@ -358,68 +358,300 @@ body {
 }
 
 
+@media (max-width: 1280px) {
+    .container {
+        max-width: 100rem;
+        padding: 0 3rem;
+    }
 
-/* @media (max-width: 1024px) {
+    .month {
+        font-size: 5.5rem;
+    }
+
+    .week {
+        font-size: 2.8rem;
+    }
+
+    .main-calendarOneDay {
+        gap: 4rem;
+    }
+
+    .shedule-header>p,
+    .homework-header>p,
+    .notes-header>p {
+        font-size: 2.8rem;
+    }
+
+    .day-header h3 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .title {
+        margin-top: 2rem;
+    }
+
+    .week-mont {
+        align-items: flex-start;
+        margin-bottom: 3rem;
+    }
+
+    .month {
+        font-size: 4.8rem;
+    }
+
+    .week {
+        font-size: 2.4rem;
+    }
+
     .main-calendarOneDay {
         flex-direction: column;
         gap: 3rem;
     }
-    
+
     .shedule-calendarOneDay,
     .right-column {
         max-width: 100%;
     }
-    
-    .week-mont {
-        align-items: flex-start;
+
+    .right-column {
+        gap: 3rem;
     }
-    
-    .month {
-        font-size: 4.8rem;
+
+    .shedule-header,
+    .homework-header,
+    .notes-header {
+        gap: 2rem;
     }
-    
-    .week {
-        font-size: 2.4rem;
+
+    .shedule-header>p,
+    .homework-header>p,
+    .notes-header>p {
+        font-size: 2.6rem;
+    }
+
+    .shedule-header>img,
+    .homework-header>img,
+    .notes-header>img {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .day-header {
+        gap: 4rem;
+    }
+
+    .day-header h3 {
+        font-size: 2rem;
+    }
+
+    .day-header .date {
+        font-size: 1.6rem;
     }
 }
 
 @media (max-width: 768px) {
+
     .container {
         padding: 0 1.5rem;
     }
-    
+
     .title {
-        margin-bottom: 5rem;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
     }
-    
+
+    .title>img {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;
+    }
+
     .week-mont {
-        margin-top: 5rem;
-        margin-bottom: 3rem;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
     }
-    
+
     .month {
         font-size: 3.6rem;
+        text-align: center;
     }
-    
+
     .week {
         font-size: 2rem;
+        text-align: center;
     }
-    
+
     .shedule-calendarOneDay,
     .homeworkblock,
     .notesblock {
         padding: 2rem;
+        border-radius: 1.5rem;
     }
-    
+
+    .shedule-header,
+    .homework-header,
+    .notes-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .shedule-header>p,
+    .homework-header>p,
+    .notes-header>p {
+        font-size: 2.4rem;
+    }
+
+    .shedule-header>img,
+    .homework-header>img,
+    .notes-header>img {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
     .day-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
+        margin-bottom: 1.5rem;
     }
-    
-    .footer-container {
-        flex-direction: column;
-        gap: 3rem;
-        padding: 3rem 2rem;
+
+    .day-header h3 {
+        font-size: 1.8rem;
     }
-} */
+
+    .day-header .date {
+        font-size: 1.4rem;
+    }
+
+    .time,
+    .subject,
+    .classroom,
+    .teacher {
+        font-size: 1.4rem;
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .time img,
+    .subject img,
+    .classroom img,
+    .teacher img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .onelesson {
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .homework-task,
+    .note-task {
+        font-size: 1.6rem;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .homework-task>input,
+    .note-task>input {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .add-homework-btn,
+    .add-note-btn {
+        padding: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .add-homework-btn img,
+    .add-note-btn img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .title>img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .month {
+        font-size: 3rem;
+    }
+
+    .week {
+        font-size: 1.8rem;
+    }
+
+    .shedule-calendarOneDay,
+    .homeworkblock,
+    .notesblock {
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .shedule-header>p,
+    .homework-header>p,
+    .notes-header>p {
+        font-size: 2rem;
+    }
+
+    .day-header h3 {
+        font-size: 1.6rem;
+    }
+
+    .day-header .date {
+        font-size: 1.2rem;
+    }
+
+    .time,
+    .subject,
+    .classroom,
+    .teacher {
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+    }
+
+
+    .homework-task,
+    .note-task {
+        font-size: 1.4rem;
+    }
+
+    .homework-task>input,
+    .note-task>input {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .add-homework-btn,
+    .add-note-btn {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .main-calendarOneDay {
+        margin-bottom: 5rem;
+    }
+}

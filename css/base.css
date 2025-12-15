@@ -90,7 +90,7 @@ nav {
   display: flex;
   margin: 0 auto;
   width: 128rem;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -113,57 +113,261 @@ nav>img {
 
 
 footer {
-    max-width: 100%;
-    background: #BEC4E3;
-    color: #3C3E4C;
-    padding: 4rem 0 2rem;
-    font-family: "RobotoRegular";
+  max-width: 100%;
+  background: #BEC4E3;
+  color: #3C3E4C;
+  padding: 4rem 0 2rem;
+  font-family: "RobotoRegular";
 }
 
 .footer-container {
-    margin: 0 auto;
-    padding: 0 2rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .footer-left .footer-logo {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-left .footer-desc {
-    max-width: 28rem;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+  max-width: 28rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-info,
 .footer-contact {
-    max-width: 26rem;
+  max-width: 26rem;
 }
 
 .footer-info h4,
 .footer-contact h4,
 .footer-social h4 {
-    margin-bottom: 1rem;
-    font-size: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
-.footer-social{
-    margin-top: 1rem;
+.footer-social {
+  margin-top: 1rem;
 }
 
 .social-icons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .footer-bottom {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .title {
+    display: flex;
+    
+  }
+
+  .title>p {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  header nav {
+    gap: 1rem;
+    justify-content: space-around;
+  }
+
+  .logotip {
+    margin-right: 1rem;
+    width: 10rem;
+  }
+
+  header nav a {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+  }
+
+  .title>img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .title>p {
+    font-size: 2.4rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
     text-align: center;
-    margin-top: 2.5rem;
-    font-size: 1rem;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 55%;
+  }
+
+  header {
+    margin-bottom: 0;
+  }
+
+  header nav {
+    padding: 1rem;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  header nav img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  header nav a {
+    display: none;
+    font-size: 1.4rem;
+  }
+
+  header nav::before {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url("../media/stash_burger-classic.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 4.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .logotip {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 0;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .title>img {
+    display: flex;
+    justify-content: left;
+    transform: none;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .title>p {
+    font-size: 2rem;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-info h4,
+  .footer-contact h4 {
+    font-size: 1.6rem;
+  }
+
+  .footer-info p,
+  .footer-contact p {
+    font-size: 1.4rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 50%;
+  }
+
+  header {
+    margin-bottom: 0;
+    height: 5rem;
+  }
+
+  header nav {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  header nav img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  header nav a {
+    display: none;
+    font-size: 1.4rem;
+    background-image: url("../media/stash_burger-classic.svg");
+  }
+
+  .logotip {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 0;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .title>img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .title>p {
+    font-size: 2rem;
+  }
+
+  .footer-container {
+    gap: 1.5rem;
+  }
+
+  .social-icons img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
