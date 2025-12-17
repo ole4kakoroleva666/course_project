@@ -225,8 +225,8 @@ body {
     }
 
     .create-homework {
-        flex-direction: column;
-        gap: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .one-section {

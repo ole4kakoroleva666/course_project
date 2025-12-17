@@ -7,25 +7,25 @@ body{
 .title {
     display: flex;
     align-items: center;
-    position: relative; /* Для позиционирования текста по центру */
-    margin-bottom: 3rem; /* Отступ снизу */
+    position: relative;
+    margin-bottom: 3rem;
 }
 
 .title>img {
     width: 5.3rem;
     height: 5.3rem;
-    margin-right: 2rem; /* Отступ справа от изображения */
+    margin-right: 2rem;
 }
 
 .title>p {
     font-size: 3.6rem;
     font-family: 'JostSemiBold';
     color: #3C3E4C;
-    position: absolute; /* Абсолютное позиционирование */
-    left: 50%; /* Сдвигаем на 50% вправо */
-    transform: translateX(-50%); /* Сдвигаем обратно на 50% от собственной ширины */
-    width: max-content; /* Ширина по содержимому */
-    margin: 0; /* Убираем внешние отступы */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    margin: 0;
 }
 
 
